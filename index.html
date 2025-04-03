@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favic.png" type="image/png">
+    <title>Welcome to Climo</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="yo">
+
+        <header class="header">
+            <div class="logo">
+                <a href="weather.html">
+                    <img src="images/1.png" alt="" height="60px" width="80px">
+                    <img src="images/Untitled design.png" alt="Climo" height="60px" width="200px">
+                </a>
+            </div>
+            <div class="searchbar">
+                <input type="search" value=" "  name="search" id="input" placeholder="Search for a city..." >
+                <button id="search" onclick="myFun()">Search</button>
+            </div>
+            <div>
+                <button id="color" onclick="myFun1()"><img src="images/loc.png" alt="" height="20px" width="20px" id="loc">Use My Current Location</button>
+            </div>
+        </header>
+        <div class="main">
+            <div class="timetemp">
+                <div class="time" id="time">
+                    <h1 id="tim"></h1>
+                    <h3 id="date"></h3>
+                    <h4 id="day"></h4>
+                </div>
+                <div class="temperature">
+                    <img src="images/favic.png" alt="" height="200px" width="300px" id="img">  
+                    <div class="temp-info">
+                        <p id="temp">--C</p>
+                        <h3 id="city">--</h3>
+                        <h2 id="country"></h2>
+                        <h2 id="type">--</h2>
+                    </div>          
+                </div>
+            </div>
+            <div class="ww">
+                <div class="hwp">
+                    <div class="info">
+                        <img src="images/humi.png" alt="" height="40px" weight="30px" id="humi">
+                        <div id="humidity">
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <img src="images/wind.png" alt="" height="40px" weight="30px">
+                        <div id="wind">
+
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <img src="images/press.png" alt="" height="40px" weight="30px">
+                        <div id="pressure">
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hf">
+                    <div class="hf2" id="hf2">
+                        <div class="hour" id="c1">
+                            <p>Sunrise</p>
+                            <img src="images/sunr.png" alt="sun" height="100px" width="100px">
+                            <p id="c1t"></p>
+                        </div>
+
+                        <div class="hour" id="c2">
+                            <p>Sunset</p>
+                            <img src="images/suns.png" alt="sun"
+                            height="100px" width="100px">
+                            <p id="c2t"></p>
+                        </div>
+
+                        <div class="hour" id="c3">
+                            <p>Visibility</p>
+                            <img src="images/visi.png" alt="sun" height="100px" width="100px">
+                            <p id="c3t"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
