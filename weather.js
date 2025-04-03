@@ -91,6 +91,9 @@ const getWeather = async function(search) {
     wind.innerHTML = "Wind Speed : --";
     pressure.innerHTML = "Pressure : --";
   }
+  if(search == ""){
+    alert("Please Enter Valid City Name :)")
+  }
 
 
   city.innerHTML = data.name;
