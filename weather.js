@@ -102,7 +102,7 @@ const getWeather = async function (search) {
 
 
   const iconCode = data.weather[0].icon;
-  images.src = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+  images.src = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
   if(type.innerHTML=="Clear"){
     images.src = "images/sunny.png";
   }
